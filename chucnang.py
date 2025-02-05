@@ -105,7 +105,7 @@ class chucnang(Ui_MainWindow):
         response = qa_bot.get_answer(question)
         self.questions.append(response)
         print(response)
-        # self.lineEditInputAnswer.setText(response)
+        self.lineEditInputAnswer.setText(f"response")
 
     # Chatbot without file
     def response_process_without_file(self):
@@ -118,7 +118,7 @@ class chucnang(Ui_MainWindow):
         simplechat = AIChatbot()
         response = simplechat.get_response(question)
         self.questions.append(response)
-        # self.lineEditInputAnswer.setText(response)
+        self.lineEditInputAnswer.setText(f"response")
         print(response)
 
     def scrolldown_UIprocessing(self):
