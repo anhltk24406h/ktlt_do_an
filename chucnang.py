@@ -104,7 +104,6 @@ class chucnang(Ui_MainWindow):
         qa_bot = QABotProcessAnswer()
         response = qa_bot.get_answer(question)
         self.questions.append(response)
-        print(response)
         self.lineEditInputAnswer.setText(f"response")
 
     # Chatbot without file
