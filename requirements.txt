@@ -8,4 +8,4 @@ sentence-transformers
 faiss-cpu
 gpt4all
 openai
-
+"pymongo[srv]"==3.12
