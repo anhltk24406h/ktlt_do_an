@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1253</width>
+    <height>978</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>1191</width>
+      <height>871</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_UI">
+     <item row="2" column="0">
+      <widget class="QGroupBox" name="groupBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>270</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 51, 102);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(245, 245, 245);</string>
+       </property>
+       <property name="title">
+        <string>Các chức năng</string>
+       </property>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>70</y>
+          <width>161</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0077b6; 
+    border-radius: 8px; 
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #f0f0f0; /* Màu xám nhạt khi hover */
+    border: 2px solid #005f8a; /* Viền đậm hơn */
+}
+
+QPushButton:pressed {
+    background-color: #e0e0e0; /* Màu nhấn */
+    border: 2px solid #004a6d; 
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Lọc Sách</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../images/ic_Filter.png</normaloff>../images/ic_Filter.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>150</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0077b6; 
+    border-radius: 8px; 
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #f0f0f0; /* Màu xám nhạt khi hover */
+    border: 2px solid #005f8a; /* Viền đậm hơn */
+}
+
+QPushButton:pressed {
+    background-color: #e0e0e0; /* Màu nhấn */
+    border: 2px solid #004a6d; 
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Borrow</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>100</y>
+          <width>301</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>60</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background-color: white;  /* Nền trắng */
+    border: 2px solid #0078D7;  /* Viền xanh đậm */
+    border-radius: 5px;  /* Bo góc */
+    padding: 5px;  /* Khoảng cách bên trong */
+    font-size: 16px;  /* Cỡ chữ to hơn */
+    color: black;  /* Màu chữ đen */
+}
+
+QComboBox::drop-down {
+    border: none;
+    background-color: white;  /* Nền dropdown */
+    width: 25px;  /* Tăng kích thước khu vực dropdown */
+}
+
+QComboBox::down-arrow {
+    image: url(down-arrow.png);  /* Đổi icon mũi tên nếu cần */
+    width: 16px;  /* Tăng kích thước mũi tên */
+    height: 16px;
+    margin-right: 5px;  /* Khoảng cách với viền phải */
+}
+
+QComboBox QAbstractItemView {
+    background: white;
+    selection-background-color: #0078D7;  /* Màu nền khi chọn */
+    selection-color: white;  /* Chữ trắng khi chọn */
+    border-radius: 5px;
+    font-size: 16px;  /* Cỡ chữ trong danh sách */
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>ISBN</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Publication Year</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Author</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Quantity</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Name Book</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>150</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0077b6; 
+    border-radius: 8px; 
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #f0f0f0; /* Màu xám nhạt khi hover */
+    border: 2px solid #005f8a; /* Viền đậm hơn */
+}
+
+QPushButton:pressed {
+    background-color: #e0e0e0; /* Màu nhấn */
+    border: 2px solid #004a6d; 
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Give Back</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../images/icon_giveback.png</normaloff>../images/icon_giveback.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>330</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>230</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#chatButton {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+QPushButton#chatButton:pressed {
+    background-color: #388E3C;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>ChatBox</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout_4"/>
+     </item>
+     <item row="1" column="0">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Minimum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="0">
+      <widget class="QListView" name="listView_2">
+       <property name="resizeMode">
+        <enum>QListView::Adjust</enum>
+       </property>
+       <property name="viewMode">
+        <enum>QListView::IconMode</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2" rowspan="2">
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 95, 138);</string>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderCascadingSectionResizes">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>113</number>
+       </attribute>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>110</number>
+       </attribute>
+       <attribute name="verticalHeaderDefaultSectionSize">
+        <number>80</number>
+       </attribute>
+       <attribute name="verticalHeaderMinimumSectionSize">
+        <number>30</number>
+       </attribute>
+       <row>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>ISBN</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Book Name</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Author</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Pub Year</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Quantity</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(245, 245, 245);
+color: rgb(0, 51, 102);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
+       <property name="title">
+        <string>Các cuốn sách đang mượn:</string>
+       </property>
+       <widget class="QTableWidget" name="tableWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>1201</width>
+          <height>621</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 95, 138);</string>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>110</number>
+        </attribute>
+        <attribute name="horizontalHeaderMinimumSectionSize">
+         <number>60</number>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>70</number>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>ISBN</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Book Name</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Author</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Pub Year</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Quantity</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1253</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
